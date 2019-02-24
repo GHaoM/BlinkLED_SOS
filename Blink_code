@@ -1,0 +1,53 @@
+//Hao Miao
+//Use the Arduino Uno and LED to blink the 'SOS' in Morse Code
+  //Morse Code is a simple language which made up with dot and dash
+  //SOS can be indicated as "dot dot dot dash dash dash dot dot dot"
+  //You can check the website to get more informatioon.
+  //https://en.wikipedia.org/wiki/Morse_code
+  
+int led = 8;//digital pin 8 is going to control the led 
+
+void setup() {
+pinMode(led, OUTPUT); //set up tht pointed pin
+}
+
+void loop() {
+
+digitalWrite(led,HIGH);
+delay(200);
+digitalWrite(led,LOW);  //dot
+delay(200);             
+digitalWrite(led,HIGH);
+delay(200);
+digitalWrite(led,LOW);  //dot
+delay(200);
+digitalWrite(led,HIGH);
+delay(200);
+digitalWrite(led,LOW);  //dot
+delay(200);
+digitalWrite(led,HIGH);
+delay(600);
+digitalWrite(led,LOW);  //dash is usually 3 times length of dot
+delay(200);
+digitalWrite(led,HIGH);
+delay(600);
+digitalWrite(led,LOW);  //dash
+delay(200);
+digitalWrite(led,HIGH);
+delay(600);
+digitalWrite(led,LOW);  //dash
+delay(200);
+digitalWrite(led,HIGH);
+delay(200);
+digitalWrite(led,LOW);  //dot
+delay(200);             
+digitalWrite(led,HIGH);
+delay(200);
+digitalWrite(led,LOW);  //dot
+delay(200);
+digitalWrite(led,HIGH);
+delay(200);
+digitalWrite(led,LOW);  //dot
+delay(1400);            //In morse code, the length of each words is 7 times length of a unit-length
+                           
+}
